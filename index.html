@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metaetiquetas para información -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="este es un sitio de sala de videojuegos" />
+  <meta name="keywords" content="videojuegos, jugar, play, xbox, games, videogames" />
+  <meta name="sitedomain" content="https://example.com" />
+  <meta name="organization" content="riwi games" />
+  <meta name="autor" content="Edwin Carmona" />
+  <meta name="designer" content="Edwin" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="revisit-after" content="15days">
+  <meta name="copyright" content="© 2024 SnakeGames. Todos los derechos reservados">
+  <title>SnakeGames</title>
+  <link rel="stylesheet" href="./src/css/styles.css"> <!-- importación de los estilos css -->
+  <link rel="shortcut icon" href="./public/img/icons/gamessk.png" type="image/x-icon"> <!-- importación del favicon -->
+</head>
+
+<body>
+  <!-- Header de la página -->
+  <header id="home" class="header">
+    <!-- Barra de navegación -->
+    <nav class="nav">
+      <i class="fa-solid fa-gamepad fa-beat"></i>
+      <!-- Enlaces por secciones -->
+      <article class="lists-link">
+        <a href="#home">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+        <a href="#catalogo">
+          <i class="fa-solid fa-tag"></i>
+          <span>Catálogo</span>
+        </a>
+        <a href="#precios">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <span>Precios</span>
+        </a>
+        <a href="#suscribe" class="btn-suscribe">Suscribirse</a>
+      </article>
+    </nav>
+    <section class="introduce">
+      <h1>Bienvenidos a SnakeGames</h1>
+      <h2>Explora y alquila un espacio para ponerte comodo</h2>
+      <p>Se alquilan videojuegos y salas para jugar</p>
+      <a href="#suscribe" class="btn-suscribe reserva">Reserva ahora</a>
+    </section>
+  </header>
+  <!-- Main de la página -->
+  <main>
+    <!-- Primera sección -->
+    <section id="catalogo" class="catalogo">
+      <h2>Catálogo</h2>
+      <!-- cards que son elementos figure -->
+      <figure class="card-typegame">
+        <img src="https://c4.wallpaperflare.com/wallpaper/535/658/344/belico-guerras-juego-video-wallpaper-preview.jpg" alt="action">
+        <figcaption class="card-typegame_text">Acción</figcaption>
+      </figure>
+      <figure class="card-typegame">
+        <img src="https://articles-img.sftcdn.net/t_article_cover_xl/auto-mapping-folder/sites/2/2020/02/fondos-pantalla-videojuegos-header-1.jpg" alt="aventura">
+        <figcaption class="card-typegame_text">Aventura</figcaption>
+      </figure>
+      <figure class="card-typegame">
+        <img src="https://i.pinimg.com/736x/c6/24/84/c62484a872e0f1b0e8bc33fcb388bfed.jpg" alt="aventura">
+        <figcaption class="card-typegame_text">Aventura</figcaption>
+      </figure>
+      <figure class="card-typegame">
+        <img src="https://e1.pxfuel.com/desktop-wallpaper/929/710/desktop-wallpaper-bgfv-5-reasons-to-buy-big-5-sporting-goods-big-5.jpg" alt="deportivo">
+        <figcaption class="card-typegame_text">Deportivo</figcaption>
+      </figure>
+      <figure class="card-typegame">
+        <img src="https://wallpapers.com/images/featured/juego-de-estrategia-5xjnikoco72n3i31.jpg" alt="estrategia">
+        <figcaption class="card-typegame_text">Estrategia</figcaption>
+      </figure>
+    </section>
+    <!-- Segunda sección -->
+    <section id="precios" class="precios">
+      <h2>Precios</h2>
+      <!-- Elementos article que muestra datos del producto, incluído un botón para ejecutar una acción -->
+      <article class="card-precio">
+        <img src="https://www.discoazul.com/uploads/media/images/fifa-23-ps4-1.jpg" alt="fifa23">
+        <p>Precio por Hora: $1.80</p>
+        <button class="btn-alq" type="button">Alquilar</button>
+      </article>
+      <article class="card-precio">
+        <img src="https://dixgamer.com/wp-content/uploads/2021/08/call-of-duty-black-ops-4-ps5.jpg" alt="cod4">
+        <p>Precio por Hora: $1.50</p>
+        <button class="btn-alq" type="button">Alquilar</button>
+      </article>
+      <article class="card-precio">
+        <img src="https://m.media-amazon.com/images/I/71+qyM4t4+L._AC_UF1000,1000_QL80_.jpg" alt="u4">
+        <p>Precio por Hora: $1.30</p>
+        <button class="btn-alq" type="button">Alquilar</button>
+      </article>
+    </section>
+    <!-- Sección para visualizar un vídeo -->
+    <section class="video-sala">
+      <h2>Conoce la sala</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/h12ovSAAATs?si=Ts2EjbukXvpeDj39"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <!-- Tercera sección -->
+    <section id="suscribe" class="suscribe">
+      <h2>Suscribete</h2>
+      <!-- Elemento article que contiene un form -->
+      <article class="suscribe-contenido">
+        <!-- Elemento form con los datos a requerir (nombre,correo,mensaje, y un button submit) -->
+        <form action="" method="get">
+          <div class="campo">
+            <label for="nombre">Tu Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required />
+          </div>
+          <div class="campo">
+            <label for="correo">Tu Correo Electrónico:</label>
+            <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required />
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje (opcional):</label>
+            <textarea name="mensaje" id="mensaje" rows="5" placeholder="Mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn-suscribe btn-submit">Registrarse</button>
+        </form>
+        <!-- Una caja que contiene la ubicación sacada de google mapas -->
+        <div class="ubicacion">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.29896671764!2d-75.74621625664064!3d6.250144700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442975edad29dd%3A0xc42be47455eef092!2sAnimeko%20Games!5e0!3m2!1ses!2sco!4v1712276362541!5m2!1ses!2sco"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h3>Aquí nos ubicamos</h3>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <!-- sección del footer que contiene las redes y el texto de copyright -->
+    <section class="contenido-footer">
+      <article class="redes">
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      </article>
+      <article class="copy">
+        <p>&copy; 2024 SnakeGames | Todos los derechos reservados</p>
+      </article>
+    </section>
+  </footer>
+</body>
+</html>
